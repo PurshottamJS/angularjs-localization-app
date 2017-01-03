@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="page-header">
+        <h1>Angular Localization Example</h1>
+    </div>
+    <div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1" data-i18n="common.emailAddress"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" data-i18n-attr="{placeholder: 'common.emailPlaceholder'}"> </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1" data-i18n="common.password"></label>
+                <input type="password" class="form-control" data-i18n-attr="{placeholder: 'common.passwordPlaceholder'}"> </div>
+            <div class="form-group">
+                <label for="exampleInputFile" data-i18n="common.fileInput"></label>
+                <input type="file" id="exampleInputFile">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> {{ 'common.rememberMe' | i18n }} </label>
+            </div>
+            <button type="submit" class="btn btn-primary" data-i18n="common.submit"></button>
+        </form>
+    </div>
+</div>
+<footer class="footer navbar-fixed-bottom">
+    <div class="container">
+        <p class="">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-5 control-label">Choose Default Language</label>
+                    <div class="col-sm-6">
+                        <select class="form-control pull-right" ng-model="dashboard.language" ng-options="lang.label for lang in dashboard.supportedLanguages" ng-change="dashboard.updateLocale(dashboard.language)"></select>
+                    </div>
+                </div>
+            </form>
+        </p>
+    </div>
+</footer>
