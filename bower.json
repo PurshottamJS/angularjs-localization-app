@@ -1,17 +1,24 @@
 {
-  "name": "angular-localization-app",
-  "description": "",
-  "main": "index.js",
-  "authors": "",
-  "license": "ISC",
-  "homepage": "",
-  "dependencies": {
-    "lodash": "^4.17.3",
-    "angular-localization": "^1.2.1",
-    "angular-sanitize": "^1.6.1",
-    "angular": "angularjs#^1.6.1",
-    "bootstrap": "^3.3.7",
-    "angular-cookies": "^1.6.1",
-    "angular-ui-router": "ui-router#^0.3.2"
-  }
+    "name": "angular-localization-app",
+    "main": "index.js",
+    "description": "This project demonstrate how to implement localization in angularjs",
+    "author": {
+        "name": "Purshottam Sharma",
+        "email": "purshottam.indore@gmail.com",
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/impurshottam/angularjs-localization-app.git"
+    },
+    "homepage": "https://github.com/impurshottam/angularjs-localization-app",
+    "license": "MIT",
+    "dependencies": {
+        "lodash": "^4.17.3",
+        "angular-localization": "^1.2.1",
+        "angular-sanitize": "^1.6.1",
+        "angular": "angularjs#^1.6.1",
+        "bootstrap": "^3.3.7",
+        "angular-cookies": "^1.6.1",
+        "angular-ui-router": "ui-router#^0.3.2"
+    }
 }
